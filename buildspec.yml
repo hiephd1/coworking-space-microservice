@@ -9,7 +9,7 @@ phases:
         commands:
             - echo Starting build at `date`
             - echo Building the Docker image...
-            - docker build -t hieppd3-udacity .
+            - docker build -t hieppd3-udacity /analytics/Dockerfile
             - docker tag hieppd3-udacity:latest 008887957957.dkr.ecr.us-east-1.amazonaws.com/analytics:latest
     post_build:
         commands:
