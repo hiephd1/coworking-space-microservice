@@ -9,8 +9,8 @@ phases:
         commands:
             - echo Starting build at `date`
             - echo Building the Docker image...
-            - docker build -t project3
-            - docker tag project3:latest 008887957957.dkr.ecr.us-east-1.amazonaws.com/analytics:latest
+            - docker build -t hieppd3-udacity
+            - docker tag hieppd3-udacity:latest 008887957957.dkr.ecr.us-east-1.amazonaws.com/analytics:latest
     post_build:
         commands:
             - echo Completed build at `date`
